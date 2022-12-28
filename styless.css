@@ -24,6 +24,10 @@ h1  {
   display: block;
   font-weight: bold;
 }
+i:hover {
+    opacity: 0.7;
+  }
+  
 ul {
   display: block;
   list-style-type: disc;
@@ -72,6 +76,7 @@ nav {
 }
 .nav_list--links  {
     display: flex;
+    font-weight: bold;
 }
 .nav_link_anchor{
     text-decoration: none;
@@ -87,9 +92,27 @@ nav {
   color: white;
   font-weight: bold;
 }
+.nav_link_hover:after {
+  content: "";
+  height: 3px;
+  width: 0px;
+  bottom: -3px;
+  position: absolute;
+  right: 0px;
+  transition: all 300ms ease;
+
+}
+.nav_link_hover:hover:after {
+  width: 100%;
+  left: 0;
+}
+.link_hover_black:after {
+  background-color: black;
+}
+
 .nav_link_anchor--primary:hover  {
   background-color: salmon;
-  transition: 300ms ease;
+  transition:  300ms ease;
 }
 .personal__logo  {
   font-size: 24px;
@@ -293,8 +316,58 @@ h4 {
 .project_description--pg {
   font-size: 14px;
   margin: 16px 0;
+  margin-bottom: 50px;
 }
 .individual_project--link {
   font-size: 20px;
-  margin-right: 0 16px
+  margin-right: 0 16px;
+}
+ .proj_link {
+  padding-left: 8px;
+  color: white;
+}
+/*Footer*/
+footer {
+  background-color: #242424;
+  padding: 30px;
+}
+.footer_list {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+  padding-bottom: 50px;
+}
+.footer_row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer_anchor {
+  margin-bottom: 24px;
+  position: relative;
+}
+.footer-link {
+  color: #fff;
+  font-weight: 500px;
+}
+.footer_link-hover:after {
+  content: "";
+  height: 3px;
+  width: 0px;
+  bottom: -3px;
+  position: absolute;
+  right: 0px;
+  transition: all 300ms ease;
+  background-color: white;
+}
+.footer_link-hover:hover:after {
+  width: 100%;
+  left: 0;
+}
+.copyright {
+  color: white;
+  font-weight: 500px;
 }
