@@ -130,7 +130,7 @@ nav {
   margin: 0 auto;
 }
 .about-me_title  {
-
+  padding-bottom: 16px;
 }
 .title_span {
   color: red;
@@ -176,6 +176,7 @@ nav {
 /*Languages*/
 .title_span  {
   color: red;
+  
 }
 .languages_img--wrapper  {
   display: flex;
