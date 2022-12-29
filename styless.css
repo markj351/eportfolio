@@ -250,7 +250,6 @@ nav {
   opacity: 0;
   transition: all 450ms ease;
   z-index: 2;
-  /*transform: translateY(100%);*/
   transition: opacity 450ms ease;
   transform: translateY(100%);
 
@@ -371,4 +370,66 @@ footer {
 .copyright {
   color: white;
   font-weight: 500px;
+}
+@media (max-width: 768px) {
+  nav {
+    height: 68px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .about-me_info--para  {
+    font-size: 18px;
+  }
+
+  .languages {
+    width: calc(100% / 3);
+  }
+
+  .project_description--pg {
+    font-size: 14px;
+  }
+
+  .project__description {
+    left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav_list--links:not(:last-child) {
+    display: none;
+  }
+
+  .project_wrapper {
+    border-radius: 0;
+  }
+
+  .project__description {
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .project_description--pg{
+    display: none;
+  }
+
+  .project_description--links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project_description--title {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .project_description--subtitle {
+    text-align: center;
+    margin: 12px 0;
+  }
 }
