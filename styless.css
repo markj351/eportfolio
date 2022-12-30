@@ -239,6 +239,9 @@ nav {
   position: relative;
   margin-top: 50px;
 }
+.projects:last-child {
+  margin-bottom: 40px;
+}
 .project_wrapper:before  {
   content: "";
   position: absolute;
@@ -270,7 +273,7 @@ nav {
 }
 
 .project_description--title {
-  text-align: left;
+ text-align: left;
   color: #fff;
   font-size: 40px;
 }
@@ -310,7 +313,7 @@ h4 {
   font-weight: bold;
 }
 .project_description--pg,
- .project_description--links,
+ .individual_project--link,
   .project_description--title,
    .project_description--subtitle {
   text-align: left;
@@ -323,10 +326,9 @@ h4 {
 }
 .individual_project--link {
   font-size: 20px;
-  margin-right: 0 16px;
+  margin-right: 16px;
 }
- .proj_link {
-  padding-left: 8px;
+.proj_link{
   color: white;
 }
 /*Footer*/
@@ -387,7 +389,7 @@ footer {
     font-size: 18px;
   }
 
-  .languages {
+  .language {
     width: calc(100% / 3);
   }
 
