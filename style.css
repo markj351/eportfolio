@@ -649,15 +649,6 @@ footer {
   top: 80vh;
   left: 80vw;
 }
-.footer__logo--popper {
-  position: absolute;
-  right: 0;
-  top: 16px;
-  font-weight: 700;
-  opacity: 0;
-  transition: all 300ms ease;
-  color: white;
-}
 
 .footer__anchor {
   position: relative;
